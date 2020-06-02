@@ -17,6 +17,9 @@
 
 	<properties>
 		<java.version>13</java.version>
+		<maven.compiler.source>${java.version}</maven.compiler.source>
+		<maven.compiler.target>${java.version}</maven.compiler.target>
+		<output.directory>target</output.directory>
 	</properties>
 
 	<developers>
@@ -92,6 +95,8 @@
 	</dependencies>
 
 	<build>
+		<finalName>${name}-${version}</finalName>
+		<outputDirectory>${output.directory}</outputDirectory>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
@@ -99,5 +104,6 @@
 			</plugin>
 		</plugins>
 	</build>
+
 
 </project>
