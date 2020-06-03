@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Index</title>
+	<link rel="stylesheet" href="/res/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="/res/css/style.css">
+	<script src="/res/js/JQuery.js"></script>
+	<script type="text/javascript" src="/res/js/search.js"></script>
+
+</head>
+<body>
+<nav class="navbar navbar-expand navbar-dark bg-dark">
+	<a class="navbar-brand" href="/">노래 검색</a>
+	<div class="collapse navbar-collapse" id="navbarsExample03">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+				<a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="/">Login<span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="/">Sign in<span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true"
+				   aria-expanded="false">MyPage</a>
+				<div class="dropdown-menu" aria-labelledby="dropdown03">
+					<a class="dropdown-item" href="#">Action</a>
+					<a class="dropdown-item" href="#">Another action</a>
+					<a class="dropdown-item" href="#">Something else here</a>
+				</div>
+			</li>
+		</ul>
+	</div>
+</nav>
+<section>
+	<div class="container">
+		<form class="search-form" onsubmit="return search();">
+			<div class="input-group mb-3">
+				<select id="searchTypeSelect">
+					<option value="title" selected>제목</option>
+					<option value="singer">가수</option>
+					<option value="composer">작곡</option>
+					<option value="lyricist">작사</option>
+					<option value="number">번호</option>
+				</select>
+				<input id="keyword" type="text" class="form-control" placeholder="keyword" aria-label="keyword"
+				       aria-describedby="button-addon2">
+				<div class="input-group-append">
+					<button class="btn btn-outline-secondary" type="button" id="button-search">검색</button>
+				</div>
+			</div>
+		</form>
+
+		<table class="table" id="searchResult">
+			<thead class="thead-dark">
+			<tr>
+				<th scope="col">#</th>
+				<th scope="col">제목</th>
+				<th scope="col">가수</th>
+				<th scope="col">작사</th>
+				<th scope="col">작곡</th>
+			</tr>
+			</thead>
+			<tbody>
+
+			</tbody>
+		</table>
+	</div>
+
+
+</section>
+</body>
+</html>

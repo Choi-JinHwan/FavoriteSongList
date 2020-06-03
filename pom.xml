@@ -11,7 +11,7 @@
 
 	<groupId>dev.anto</groupId>
 	<artifactId>favorite-song-list</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>favorite-song-list</name>
 	<description>Demo project for Spring Boot</description>
 
