@@ -1,15 +1,14 @@
 package dev.anto.song.parsing.service;
 
 
-import dev.anto.song.parsing.vo.TjSearchParameterVo;
 import dev.anto.song.parsing.vo.SongVo;
+import dev.anto.song.parsing.vo.TjSearchParameterVo;
 import dev.anto.song.parsing.vo.TjSearchType;
 import lombok.extern.slf4j.Slf4j;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
@@ -21,7 +20,6 @@ import org.springframework.web.server.ResponseStatusException;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -39,6 +37,7 @@ public class TjParsingServiceImpl implements TjSongParsingService {
 
     @Override
     public Page<SongVo> search(TjSearchType searchType, String keyword, Pageable pageable) {
+        log.info("[{}]: {}", searchType.name(), keyword);
         switch (searchType) {
             case NUMBER:
             case LYRICIST:
