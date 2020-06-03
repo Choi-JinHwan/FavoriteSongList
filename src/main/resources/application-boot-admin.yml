@@ -8,7 +8,5 @@ spring:
   boot:
     admin:
       client:
-        instance:
         username: ${SPRING_BOOT_ADMIN_USERNAME}
         password: ${SPRING_BOOT_ADMIN_PASSWORD}
-        url: ${SPRING_BOOT_ADMIN_CLIENT_URL}
