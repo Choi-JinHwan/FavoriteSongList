@@ -10,3 +10,8 @@ spring:
       client:
         username: ${SPRING_BOOT_ADMIN_USERNAME}
         password: ${SPRING_BOOT_ADMIN_PASSWORD}
+        instance:
+          metadata:
+            user:
+              name: ${SPRING_BOOT_ADMIN_USERNAME}
+              password: ${SPRING_BOOT_ADMIN_PASSWORD}
