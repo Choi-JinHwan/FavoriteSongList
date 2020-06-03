@@ -5,7 +5,6 @@ $(document).ready(function () {
 
 	$("#keyword").keydown(function (e) {
 		if (e.keyCode == 13){
-			e.prenentDefault();
 			search();
 		}
 	});
